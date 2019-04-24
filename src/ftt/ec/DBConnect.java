@@ -5,6 +5,9 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+import ftt.ec.dao.PeopleDao;
+import ftt.ec.model.People;
+
 /* Start MySQL Linux: service mysql start
  * 
  * 
@@ -49,6 +52,26 @@ public class DBConnect {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} //try
+		
+		People p1 = new People();
+		People p2 = new People();
+		
+		p1.setName("João");		
+		p2.setName("Maria");
+		
+		System.out.println(p1);
+		System.out.println(p2);
+		
+		
+		//Dao teste!!!
+		
+		PeopleDao peopleDao = new PeopleDao();
+		
+		People pDell = new People();
+		pDell.setId(7);
+		
+		peopleDao.deletePeople(8);
+		peopleDao.deletePeople(pDell);
 		
 		
 		
