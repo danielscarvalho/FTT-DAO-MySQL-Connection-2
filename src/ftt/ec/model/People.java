@@ -13,7 +13,7 @@ public class People {
 	private String email;
 	private Date dob;
 	private String color;
-	private String cardtype;
+	private String cardType;
 	private String gender;
 	private String period;
 	private float value;
@@ -108,11 +108,11 @@ public class People {
 	public void setColor(String color) {
 		this.color = color;
 	}
-	public String getCardtype() {
-		return cardtype;
+	public String getCardType() {
+		return cardType;
 	}
 	public void setCardtype(String cardtype) {
-		this.cardtype = cardtype;
+		this.cardType = cardType;
 	}
 	public String getGender() {
 		return gender;

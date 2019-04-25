@@ -68,9 +68,9 @@ public class DBConnect {
 		PeopleDao peopleDao = new PeopleDao();
 		
 		People pDell = new People();
-		pDell.setId(7);
+		pDell.setId(700);
 		
-		peopleDao.deletePeople(8);
+		peopleDao.deletePeople(800);
 		peopleDao.deletePeople(pDell);
 		
 		
